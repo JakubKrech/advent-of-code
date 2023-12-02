@@ -3,6 +3,7 @@
 # Advent of Code 2023 :christmas_tree:
 
 - **Day 1: [Trebuchet?!](advent-of-code-2023/advent-of-code-2023/Solutions/Day_01.cs)**
+- **Day 2: [Cube Conundrum](advent-of-code-2023/advent-of-code-2023/Solutions/Day_02.cs)**
 
 # Advent of Code 2022 :christmas_tree:
 
