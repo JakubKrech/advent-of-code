@@ -5,6 +5,7 @@
 - **Day 1: [Trebuchet?!](advent-of-code-2023/advent-of-code-2023/Solutions/Day_01.cs)**
 - **Day 2: [Cube Conundrum](advent-of-code-2023/advent-of-code-2023/Solutions/Day_02.cs)**
 - **Day 3: [Gear Ratios](advent-of-code-2023/advent-of-code-2023/Solutions/Day_03.cs)**
+- **Day 4: [Scratchcards](advent-of-code-2023/advent-of-code-2023/Solutions/Day_04.cs)**
 
 # Advent of Code 2022 :christmas_tree:
 
