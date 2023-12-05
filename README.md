@@ -6,7 +6,7 @@
 - **Day 2: [Cube Conundrum](advent-of-code-2023/advent-of-code-2023/Solutions/Day_02.cs)**
 - **Day 3: [Gear Ratios](advent-of-code-2023/advent-of-code-2023/Solutions/Day_03.cs)**
 - **Day 4: [Scratchcards](advent-of-code-2023/advent-of-code-2023/Solutions/Day_04.cs)**
-- **Day 4: [If You Give A Seed A Fertilizer](advent-of-code-2023/advent-of-code-2023/Solutions/Day_05.cs)**
+- **Day 5: [If You Give A Seed A Fertilizer](advent-of-code-2023/advent-of-code-2023/Solutions/Day_05.cs)**
 
 # Advent of Code 2022 :christmas_tree:
 

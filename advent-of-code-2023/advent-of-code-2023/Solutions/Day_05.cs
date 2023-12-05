@@ -14,8 +14,6 @@ namespace advent_of_code_2023.Solutions
 
         private static int Part1(IEnumerable<string> input)
         {
-            return 0;
-
             List<Int64> seeds = input.First().Split(':')[1].Trim().Split().Select(Int64.Parse).ToList();
             var inputList = input.ToList();
 
@@ -25,8 +23,6 @@ namespace advent_of_code_2023.Solutions
             foreach (Int64 seed in seeds)
             {
                 Int64 current = seed;
-
-                //Console.Write("Seed " + seed + ": ");
 
                 foreach (var transition in data)
                 {
@@ -50,29 +46,13 @@ namespace advent_of_code_2023.Solutions
 
                             current += shift;
                             transitionFound = true;
-
-                            Console.WriteLine("Transition found " + current + " -> " + (current - shift));
                         }
                     }
-
-                    if(!transitionFound)
-                    {
-                        Console.WriteLine("NOT found: " + current);
-                    }
-
-                    //Console.Write(current + ", ");
                 }
 
                 results.Add(current);
-                Console.WriteLine("\nSeed " + seed + " -> Location " + current);
             }
 
-            foreach (Int64 result in results)
-            {
-                Console.WriteLine(result);
-            }
-
-            Console.WriteLine("RESULT: " + results.Min());
             return (int)results.Min();
         }
 
@@ -88,13 +68,10 @@ namespace advent_of_code_2023.Solutions
             {
                 Int64 rangeStart = seeds[i];
                 Int64 rangeEnd = rangeStart + seeds[i + 1] - 1;
-                Console.WriteLine("STARTING NEW: " + rangeStart  + " - " + rangeEnd);
+
                 RecurrentSeedAnalysis(rangeStart, rangeEnd, 0);
             }
 
-            Console.WriteLine("RESULT: " + Part2Results.Min());
-
-            Part2Results.Sort();
             return (int)Part2Results.Min();
         }
 
@@ -131,25 +108,17 @@ namespace advent_of_code_2023.Solutions
 
         private static void RecurrentSeedAnalysis(Int64 rangeStart, Int64 rangeEnd, int transitionLayer)
         {
-            //Console.WriteLine("RSA: " + rangeStart + "-" + rangeEnd + "(" + transitionLayer + ")");
-
+            // Break after all transitions has been completed, lower bound of range is result
             if(transitionLayer == globalData.Count)
             {
-                Console.WriteLine(" >>>>>>>>>>>>>>> RESULT: " + rangeStart + " " + rangeEnd);
                 Part2Results.Add(rangeStart);
                 return;
             }
 
             var transition = globalData[transitionLayer];
 
-            // sort rules by beginning of the rule range
-            transition.Sort((x, y) => { return x[1] > y[1] ? 1 : 0; });
-            transition.Sort(new ListComparer());
-
-            //foreach (var x in transition)
-            //{
-            //    Console.WriteLine(x[1] + " " + (x[1] + x[2] - 1));
-            //}
+            // Sort rules by beginning of the rule range (2nd element of list)
+            transition.Sort((x, y) => { return x[1].CompareTo(y[1]); });
 
             foreach (var rule in transition)
             {
@@ -158,7 +127,7 @@ namespace advent_of_code_2023.Solutions
                 Int64 shift = rule[0] - rule[1];
 
                 // 1) Entire range inside the rule - forward and break
-                if(rangeStart >= ruleStart && rangeEnd <= ruleEnd) 
+                if (rangeStart >= ruleStart && rangeEnd <= ruleEnd) 
                 {
                     RecurrentSeedAnalysis(rangeStart + shift, rangeEnd + shift, transitionLayer + 1);
                     rangeStart = rangeEnd + 1;
@@ -180,13 +149,12 @@ namespace advent_of_code_2023.Solutions
                     // Forward ruled middle
                     RecurrentSeedAnalysis(ruleStart + shift, ruleEnd + shift, transitionLayer + 1);
 
-                    // update rangeStart
                     rangeStart = ruleEnd + 1;
                     continue;
                 }
 
                 // 4) Overlap on the left end - forward beginning, forward ruled rest, break
-                if(rangeStart < ruleStart && rangeEnd > ruleStart && rangeEnd < ruleEnd)
+                if(rangeStart <= ruleStart && rangeEnd >= ruleStart && rangeEnd <= ruleEnd)
                 {
                     // Forward beginning
                     RecurrentSeedAnalysis(rangeStart, ruleStart - 1, transitionLayer + 1);
@@ -194,13 +162,12 @@ namespace advent_of_code_2023.Solutions
                     // Forward ruled rest
                     RecurrentSeedAnalysis(ruleStart + shift, rangeEnd + shift, transitionLayer + 1);
 
-                    rangeStart = rangeEnd + 1;
+                    rangeEnd = ruleStart - 1;
                     break;
                 }
 
                 // 5) Overlap on the right end - forward ruled beginning, continue
-                // update rangeStart
-                if(rangeStart > ruleStart && rangeStart < ruleEnd && rangeEnd > ruleEnd)
+                if(rangeStart >= ruleStart && rangeStart <= ruleEnd && rangeEnd > ruleEnd)
                 {
                     // Forward ruled beginning
                     RecurrentSeedAnalysis(rangeStart + shift, ruleEnd + shift, transitionLayer + 1);
@@ -214,16 +181,6 @@ namespace advent_of_code_2023.Solutions
             if (rangeStart <= rangeEnd)
             {
                 RecurrentSeedAnalysis(rangeStart, rangeEnd, transitionLayer + 1);
-            }
-        }
-
-        // Custom comparer for sorting by the second element of the inner lists
-        public class ListComparer : IComparer<List<Int64>>
-        {
-            public int Compare(List<Int64> x, List<Int64> y)
-            {
-                // Compare the second elements of the lists
-                return x[1].CompareTo(y[1]);
             }
         }
     }
