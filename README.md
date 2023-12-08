@@ -9,6 +9,7 @@
 - **Day 5: [If You Give A Seed A Fertilizer](advent-of-code-2023/advent-of-code-2023/Solutions/Day_05.cs)**
 - **Day 6: [Wait For It](advent-of-code-2023/advent-of-code-2023/Solutions/Day_06.cs)**
 - **Day 7: [Camel Cards](advent-of-code-2023/advent-of-code-2023/Solutions/Day_07.cs)**
+- **Day 8: [Haunted Wasteland](advent-of-code-2023/advent-of-code-2023/Solutions/Day_08.cs)**
 
 # Advent of Code 2022 :christmas_tree:
 

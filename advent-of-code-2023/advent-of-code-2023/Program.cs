@@ -13,6 +13,7 @@ namespace advent_of_code_2023
             Day_05.Solve();
             Day_06.Solve();
             Day_07.Solve();
+            Day_08.Solve();
         }
     }
 }

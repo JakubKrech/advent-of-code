@@ -1,5 +1,4 @@
 ﻿using AdventOfCode2022.Tools;
-using System.Collections.Generic;
 
 namespace advent_of_code_2023.Solutions
 {
