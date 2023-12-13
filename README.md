@@ -14,6 +14,7 @@
 - **Day 10: [Pipe Maze](advent-of-code-2023/advent-of-code-2023/Solutions/Day_10.cs)**
 - **Day 11: [Cosmic Expansion](advent-of-code-2023/advent-of-code-2023/Solutions/Day_11.cs)**
 - **Day 12: [Hot Springs](advent-of-code-2023/advent-of-code-2023/Solutions/Day_12.cs)**
+- **Day 13: [Point of Incidence](advent-of-code-2023/advent-of-code-2023/Solutions/Day_13.cs)**
 
 # Advent of Code 2022 :christmas_tree:
 
