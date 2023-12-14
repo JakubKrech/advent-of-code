@@ -43,6 +43,7 @@ namespace advent_of_code_2023.Solutions
                 {
                     bool smudgePossible = part2;
 
+                    // We want to look for different mirrors than in Part1, where smudge is not allowed
                     if (part2 && Part1Solutions[figIndex].Item1 == "horizontal")
                     {
                         if (Part1Solutions[figIndex].Item2 == i && Part1Solutions[figIndex].Item3 == i + 1)
@@ -98,6 +99,7 @@ namespace advent_of_code_2023.Solutions
                 {
                     bool smudgePossible = part2;
 
+                    // We want to look for different mirrors than in Part1, where smudge is not allowed
                     if (part2 && Part1Solutions[figIndex].Item1 == "vertical")
                     {
                         if (Part1Solutions[figIndex].Item2 == i && Part1Solutions[figIndex].Item3 == i + 1)
