@@ -16,6 +16,7 @@
 - **Day 12: [Hot Springs](advent-of-code-2023/advent-of-code-2023/Solutions/Day_12.cs)**
 - **Day 13: [Point of Incidence](advent-of-code-2023/advent-of-code-2023/Solutions/Day_13.cs)**
 - **Day 14: [Parabolic Reflector Dish](advent-of-code-2023/advent-of-code-2023/Solutions/Day_14.cs)**
+- **Day 15: [Lens Library](advent-of-code-2023/advent-of-code-2023/Solutions/Day_15.cs)**
 
 # Advent of Code 2022 :christmas_tree:
 
