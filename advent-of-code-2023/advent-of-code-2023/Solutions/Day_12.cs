@@ -7,110 +7,193 @@ namespace advent_of_code_2023.Solutions
     {
         public static void Solve()
         {
-            AoCTools.RunMeasureTimeAndLog(Part1, Part2, "12", testInput: false);
+            AoCTools<Int64>.RunMeasureTimeAndLog(Part1, Part2, "12", testInput: false);
         }
 
-        private static int Part1(IEnumerable<string> input)
+        private static Int64 Part1(IEnumerable<string> input)
         {
-            int totalArrangements = 0;
+            Int64 result = 0;
 
             foreach (string str in input)
             {
                 var data = str.Split(' ');
 
-                string initialLine = "." + data[0] + ".";
-                List<int> originalDamagedSprings = data[1].Split(',').Select(x => int.Parse(x)).ToList();
-                List<int> damagedSprings = data[1].Split(',').Select(x => int.Parse(x)).ToList();
+                string shortData = data[0];
+                List<int> shortDamagedSprings = data[1].Split(',').Select(x => int.Parse(x)).ToList();
 
-                HashSet<string> arrangements = new() { initialLine };
+                result += FindCombinationsRecurrent(shortData, shortDamagedSprings);
+            }
 
-                while(damagedSprings.Count > 0)
+            return result;
+        }
+
+        private static Dictionary<string, Int64> cache = new Dictionary<string, Int64>();
+
+        private static Int64 Part2(IEnumerable<string> input)
+        {
+            Int64 result = 0;
+
+            foreach(string str in input)
+            {
+                var data = str.Split(' ');
+
+                StringBuilder longData = new();
+                List<int> longDamagedSprings = new List<int>();
+
+                for (int i = 0; i < 5; i++)
                 {
-                    HashSet<string> newArrangements = new();
+                    longData.Append(data[0] + "?");
+                    longDamagedSprings.AddRange(data[1].Split(',').Select(x => int.Parse(x)).ToList());
+                }
 
-                    int currentDamaged = damagedSprings[0];
-                    damagedSprings.Remove(currentDamaged);
+                longData.Remove(longData.Length - 1, 1); // remove trailing question mark
 
-                    foreach(var arr in arrangements)
+                result += FindCombinationsRecurrent(longData.ToString(), longDamagedSprings);
+            }
+
+            return result;
+        }
+
+        private static Int64 FindCombinationsRecurrent(string line, List<int> damaged)
+        {
+            string cacheKey = GetCacheKey(line, damaged);
+
+            if (cache.TryGetValue(GetCacheKey(line, damaged), out Int64 cachedResult)) return cachedResult;
+
+            // Check if remaining line is long enough to fit all damaged
+            int requiredLength = damaged.Sum() + (damaged.Count - 1);
+            if (line.Length < requiredLength) return 0;
+
+            // Check if there is enough '?' and '#' spots to fit all damaged
+            int remainingHashAndQuestionMarks = line.Count(c => c == '?') + line.Count(c => c == '#');
+            int remainingDamagedSum = damaged.Sum();
+            if (remainingHashAndQuestionMarks < remainingDamagedSum) return 0;
+
+            // Check if the longest existing sequence of # is not longer than biggest remaining damaged
+            if (GetLengthOfLongestSequenceOfHash(line) > damaged.Max()) return 0;
+
+            Int64 result = 0;
+            int currentDamaged = damaged[0];
+            bool existingHashTouched = false;
+
+            // Fit first damaged in every possible spot and make recurrent call
+            for(int i = 0; i < line.Length; i++)
+            {
+                string remainingSubstring = line.Substring(i);
+
+                // If line is already too short
+                if (i + currentDamaged > line.Length) break;
+
+                if (line[i] == '.')
+                {
+                    if (existingHashTouched) break;
+                    continue; // do nothing, go to next character
+                }
+
+                else if (line[i] == '#') // damaged needs to start here and have correct length
+                {
+                    existingHashTouched = true;
+
+                    // Check if currentDamaged can be placed here
+                    var xxx = line.Substring(i, currentDamaged);
+                    if (xxx.Contains('.')) continue;
+
+                    // Check if it can be followed by immediate '.'
+                    if (i + currentDamaged < line.Length && line[i + currentDamaged] == '#') continue;
+
+                    // Check if previous char can be dot
+                    if (i - 1 >= 0 && line[i - 1] == '#') break;
+
+                    // Make recurrent call with line substring starting after post-currentDamaged dot
+                    string newSubstring = i + currentDamaged + 1 < line.Length ? line.Substring(i + currentDamaged + 1) : string.Empty;
+
+                    if (damaged.Count == 1)
                     {
-                        for (int i = 0; i < initialLine.Length; i++)
+                        if (newSubstring.Contains('#')) continue;
+                        else
                         {
-                            StringBuilder lineCopy = new StringBuilder(arr);
-                            int remainingDamaged = currentDamaged;
-                            int j = i;
-
-                            if (lineCopy[j] == '.' || lineCopy[j - 1] == '#') continue;
-
-                            while (remainingDamaged > 0)
-                            {
-                                if (lineCopy[j] == '#' || lineCopy[j] == '?')
-                                {
-                                    lineCopy[j] = '#';
-                                    remainingDamaged--;
-                                    j++;
-                                }
-                                else
-                                {
-                                    break;
-                                }
-                            }
-
-                            if (remainingDamaged == 0 && lineCopy[j] != '#')
-                            {
-                                newArrangements.Add(lineCopy.ToString());
-                            }
+                            result += 1;
+                            continue;
                         }
                     }
-
-                    arrangements.Clear();
-                    arrangements = newArrangements;
-                }
-
-                HashSet<string> validArrangements = new();
-
-                foreach (var arr in arrangements)
-                {
-                    var damagedStringsInNewArr = GetExistingDamagedStrings(arr);
-                    bool valid = true;
-
-                    for (int i = 0; i < damagedStringsInNewArr.Count; i++)
+                    else if (i + currentDamaged + 1 < line.Length)
                     {
-                        if (damagedStringsInNewArr.Count != originalDamagedSprings.Count ||
-                            damagedStringsInNewArr[i] != originalDamagedSprings[i]) valid = false;
+                        result += FindCombinationsRecurrent(newSubstring, damaged.GetRange(1, damaged.Count - 1));
                     }
-
-                    if (valid) validArrangements.Add(arr);
                 }
 
-                totalArrangements += validArrangements.Count;
-            }
-
-            return totalArrangements;
-        }
-
-        private static int Part2(IEnumerable<string> input)
-        {
-            return 0;
-        }
-
-        private static List<int> GetExistingDamagedStrings(string line)
-        {
-            List<int> damagedStrings = new();
-
-            int start = -1;
-
-            for (int i = 0; i < line.Length; i++)
-            {
-                if (line[i] == '#' && start == -1) start = i;
-
-                if (line[i] != '#' && start != -1)
+                else if (line[i] == '?')
                 {
-                    damagedStrings.Add(i - start);
-                    start = -1;
+                    // If line is already too short
+                    if (i + currentDamaged > line.Length) break;
+
+                    // Check if currentDamaged can be placed here
+                    var xxx = line.Substring(i, currentDamaged);
+                    if (xxx.Contains('.')) continue;
+
+                    // Check if previous char can be dot
+                    if (i - 1 >= 0 && line[i - 1] == '#') break;
+
+                    // Check if it can be followed by immediate '.'
+                    if (i + currentDamaged < line.Length && line[i + currentDamaged] == '#') continue;
+
+                    // Make recurrent call with line substring starting after post-currentDamaged dot
+                    string newSubstring = i + currentDamaged + 1 < line.Length ? line.Substring(i + currentDamaged + 1) : string.Empty;
+
+                    if (damaged.Count == 1)
+                    {
+                        if (newSubstring.Contains('#')) continue;
+                        else
+                        {
+                            result += 1;
+                            continue;
+                        }
+                    }
+                    else if (i + currentDamaged + 1 < line.Length)
+                    {
+                        result += FindCombinationsRecurrent(line.Substring(i + currentDamaged + 1), damaged.GetRange(1, damaged.Count - 1));
+                    }
                 }
             }
 
-            return damagedStrings;
+            cache[GetCacheKey(line, damaged)] = result;
+            
+            return result;
+        }
+
+        private static string GetCacheKey(string line, List<int> damaged)
+        {
+            StringBuilder cacheKey = new(line);
+            cacheKey.Append(':');
+
+            foreach (int d in damaged)
+            {
+                cacheKey.Append(d);
+                cacheKey.Append(',');
+            }
+
+            return cacheKey.ToString();
+        }
+
+        private static int GetLengthOfLongestSequenceOfHash(string line)
+        {
+            int longest = -1;
+            int current = 0;
+
+            foreach(char c in line)
+            {
+                if(c == '#')
+                {
+                    current++;
+                    if(current > longest) longest = current;
+                }
+                else
+                {
+                    current = 0;
+                }
+            }
+
+            return longest;
         }
     }
 }

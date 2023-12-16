@@ -304,7 +304,7 @@ namespace advent_of_code_2023.Solutions
 
 
                 int newResult = CalculateNorthSupportBeamLoad(board);
-                Console.WriteLine(i + " " + newResult + " " + (prevResult - newResult));
+                // Console.WriteLine(i + " " + newResult + " " + (prevResult - newResult));
                 prevResult = newResult;
             }
 
