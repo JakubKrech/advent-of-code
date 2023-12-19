@@ -4,14 +4,14 @@
 
     internal static class Print
     {
-        public static void Print2dList(List<List<char>> data)
+        public static void Print2dList<T>(List<List<T>> data, string separator = "")
         {
             StringBuilder myString = new();
             foreach (var line in data)
             {
-                foreach (char c in line)
+                foreach (T c in line)
                 {
-                    myString.Append(c);
+                    myString.Append(c + separator);
                 }
                 myString.Append('\n');
             }

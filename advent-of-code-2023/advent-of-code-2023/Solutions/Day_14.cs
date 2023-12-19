@@ -326,7 +326,7 @@ namespace advent_of_code_2023.Solutions
 
             // With that knowledge its possible to predict what value will be returned on iteration 1000000000.
 
-            Int64 remainingIterations = (1000000000 - 118) % 63;
+            // Int64 remainingIterations = (1000000000 - 118) % 63;
 
             return 118747;
         }
