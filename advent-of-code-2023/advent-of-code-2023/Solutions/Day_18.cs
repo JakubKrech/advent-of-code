@@ -283,9 +283,21 @@ namespace advent_of_code_2023.Solutions
                 int leftIndex = verticalsInRow.FindIndex(x => x == left);
                 int rightIndex = verticalsInRow.FindIndex(x => x == right);
 
+                /*
+                The idea used in solution below is that in each row we always have a region not included in the figure, then
+                a region that is inside the figure, then again outside of figure etc... How do we know what if we are inside
+                or outside of the figure? By analyzing the row and seeing how many vertical lines crosses that row. First vertical
+                starts the inside-figure region, second vertical ends it. So %2 operation can be used to determine it. The only issue
+                are horizontal lines in that row - we need to handle them separately. Handling is different depending if we are inside
+                or outside of the figure when the horizontal line is detected.
+                */
+
+                // Process horizontal lines, to get to the point where no horizontal line interfere with easy vertical calculations performed later
+                
+                // Both attached vertical lines are going up, or both are going down
                 if (left.Item3 > horizontal.Item1 && right.Item3 > horizontal.Item1 || left.Item2 < horizontal.Item1 && right.Item2 < horizontal.Item1)
                 {
-                    if (leftIndex % 2 == 1) // this cannot shorten the side verticals, just add horizontal for calculation - shorter from both sides by 1
+                    if (leftIndex % 2 == 1) // We are inside a figure - do not shorten attached verticals, just count the shortened horizontal line
                     {
                         calculatableHorizontals.Add(new Tuple<int, int, int>(horizontal.Item1, horizontal.Item2 + 1, horizontal.Item3 - 1));
                     }
@@ -316,9 +328,10 @@ namespace advent_of_code_2023.Solutions
                         }
                     }
                 }
-                else
+                else // One attached vertical is going up, while the other is going down
                 {
-                    if(leftIndex % 2 == 0) // remove reszte z lewo, dodaj nowy vertical ostatni z prawej
+                    // We are outside of a figure - remove almost entire horizontal, except the rightmost element (update attached verticals)
+                    if (leftIndex % 2 == 0)
                     {
                         total += horizontal.Item3 - horizontal.Item2;
 
@@ -335,7 +348,7 @@ namespace advent_of_code_2023.Solutions
                         verticals.Sort((x, y) => x.Item1.CompareTo(y.Item1));
                         verticalsInRow.Sort((x, y) => x.Item1.CompareTo(y.Item1));
                     }
-                    else // % 2 == 1
+                    else // We are inside of a figure - remove almost entire horizontal, except the left element (update attached verticals)
                     {
                         total += horizontal.Item3 - horizontal.Item2;
 
@@ -355,6 +368,7 @@ namespace advent_of_code_2023.Solutions
                 }
             }
 
+            // For each row either just cound the side horizontal lengths, or perform easy vertical-only calculations
             for(int row = min_row; row <= max_row; row++)
             {
                 int totalForRow = 0;
