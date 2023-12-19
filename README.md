@@ -20,6 +20,7 @@
 - **Day 16: [The Floor Will Be Lava](advent-of-code-2023/advent-of-code-2023/Solutions/Day_16.cs)**
 - **Day 17: Clumsy Crucible**
 - **Day 18: [Lavaduct Lagoon](advent-of-code-2023/advent-of-code-2023/Solutions/Day_18.cs)**
+- **Day 19: [Aplenty](advent-of-code-2023/advent-of-code-2023/Solutions/Day_19.cs)**
 
 # Advent of Code 2022 :christmas_tree:
 

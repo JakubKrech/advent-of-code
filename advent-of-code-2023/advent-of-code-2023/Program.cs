@@ -24,6 +24,7 @@ namespace advent_of_code_2023
             Day_16.Solve();
             // Day_17.Solve();
             Day_18.Solve();
+            Day_19.Solve();
         }
     }
 }
