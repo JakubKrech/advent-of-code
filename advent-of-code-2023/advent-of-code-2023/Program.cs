@@ -6,25 +6,28 @@ namespace advent_of_code_2023
     {
         static void Main(string[] args)
         {
-            Day_01.Solve();
-            Day_02.Solve();
-            Day_03.Solve();
-            Day_04.Solve();
-            Day_05.Solve();
-            Day_06.Solve();
-            Day_07.Solve();
-            Day_08.Solve();
-            Day_09.Solve();
-            Day_10.Solve();
-            Day_11.Solve();
-            Day_12.Solve();
-            Day_13.Solve();
-            Day_14.Solve();
-            Day_15.Solve();
-            Day_16.Solve();
-            // Day_17.Solve();
-            Day_18.Solve();
-            Day_19.Solve();
+            //Day_01.Solve();
+            //Day_02.Solve();
+            //Day_03.Solve();
+            //Day_04.Solve();
+            //Day_05.Solve();
+            //Day_06.Solve();
+            //Day_07.Solve();
+            //Day_08.Solve();
+            //Day_09.Solve();
+            //Day_10.Solve();
+            //Day_11.Solve();
+            //Day_12.Solve();
+            //Day_13.Solve();
+            //Day_14.Solve();
+            //Day_15.Solve();
+            //Day_16.Solve();
+            //Day_17.Solve();
+            //Day_18.Solve();
+            //Day_19.Solve();
+            //Day_20.Solve();
+            Day_21.Solve();
+            //Day_22.Solve();
         }
     }
 }
