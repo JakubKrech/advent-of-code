@@ -21,6 +21,10 @@
 - **Day 17: Clumsy Crucible**
 - **Day 18: [Lavaduct Lagoon](advent-of-code-2023/advent-of-code-2023/Solutions/Day_18.cs)**
 - **Day 19: [Aplenty](advent-of-code-2023/advent-of-code-2023/Solutions/Day_19.cs)**
+- **Day 20: Pulse Propagation**
+- **Day 21: [Step Counter](advent-of-code-2023/advent-of-code-2023/Solutions/Day_21.cs)**
+- **Day 22: Sand Slabs**
+- **Day 23: [A Long Walk](advent-of-code-2023/advent-of-code-2023/Solutions/Day_23.cs)**
 
 # Advent of Code 2022 :christmas_tree:
 
