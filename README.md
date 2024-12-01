@@ -1,6 +1,10 @@
-### Here are my C# solutions for AoC [2022](https://adventofcode.com/2022/) & [2023](https://adventofcode.com/2023/) - programming puzzles created by [Eric Wastl](http://was.tl/).
+### Here are my C# solutions for AoC [2022](https://adventofcode.com/2022/), [2023](https://adventofcode.com/2023/) & [2024](https://adventofcode.com/2024/) - programming puzzles created by [Eric Wastl](http://was.tl/).
 
-# Advent of Code 2023 :christmas_tree:
+# Advent of Code 2024 :christmas_tree: - Rust :crab:
+
+- **Day 1: [Historian Hysteria](advent-of-code-2024/src/day_01.rs)**
+
+# Advent of Code 2023 :christmas_tree: - C#
 
 - **Day 1: [Trebuchet?!](advent-of-code-2023/advent-of-code-2023/Solutions/Day_01.cs)**
 - **Day 2: [Cube Conundrum](advent-of-code-2023/advent-of-code-2023/Solutions/Day_02.cs)**
@@ -26,7 +30,7 @@
 - **Day 22: [Sand Slabs](advent-of-code-2023/advent-of-code-2023/Solutions/Day_22.cs)**
 - **Day 23: [A Long Walk](advent-of-code-2023/advent-of-code-2023/Solutions/Day_23.cs)**
 
-# Advent of Code 2022 :christmas_tree:
+# Advent of Code 2022 :christmas_tree: - C#
 
 - **Day 1: [Calorie Counting](advent-of-code-2022/AdventOfCode2022/Solutions/Day_01.cs)**
 - **Day 2: [Rock Paper Scissors](advent-of-code-2022/AdventOfCode2022/Solutions/Day_02.cs)**
