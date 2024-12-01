@@ -1,14 +1,13 @@
-use std::fs;
-use std::time::Instant;
+use crate::utilities::get_input_lines;
 
 // https://adventofcode.com/2024/day/1
 
 const DAY_STRING : &str = "day_01";
-const TEST_RUNS : u32 = 1000;
+const USE_TEST_DATA : bool = false;
 
-fn part_1() -> String
+pub fn part_1() -> String
 {
-    let input = get_input(false);
+    let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
 
     let mut left_numbers : Vec<i32>;
     let mut right_numbers : Vec<i32>;
@@ -26,9 +25,9 @@ fn part_1() -> String
     return distance.to_string();
 }
 
-fn part_2() -> String
+pub fn part_2() -> String
 {
-    let input = get_input(false);
+    let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
 
     let left_numbers : Vec<i32>;
     let right_numbers : Vec<i32>;
@@ -42,43 +41,6 @@ fn part_2() -> String
     }
 
     return similarity.to_string();
-}
-
-pub fn solve() {
-    let mut before = Instant::now();
-
-    let part_1_result = part_1();
-    for _ in 1..TEST_RUNS {
-        part_1();
-    }
-    let part_1_time_elapsed = before.elapsed() / TEST_RUNS;
-
-    before = Instant::now();
-
-    let part_2_result = part_2();
-    for _ in 1..TEST_RUNS {
-        part_2();
-    }
-    let part_2_time_elapsed = before.elapsed() / TEST_RUNS;
-
-    println!("\n-- Day 01 --");
-    println!(" Part 1: {:15} elapsed: {:.2?} (average of 1000 runs)", part_1_result, part_1_time_elapsed);
-    println!(" Part 2: {:15} elapsed: {:.2?} (average of 1000 runs)", part_2_result, part_2_time_elapsed);
-}
-
-fn get_input(use_test_data : bool) -> Vec<String> {
-    let file_path = match use_test_data {
-        true => format!("test_input/{}.txt", DAY_STRING),
-        false => format!("input/{}.txt", DAY_STRING)
-    };
-
-    let data : Vec<String> = fs::read_to_string(file_path)
-        .unwrap()
-        .lines()
-        .map(String::from)
-        .collect();
-
-    return data;
 }
 
 fn split_input_into_two_collections(input : Vec<String>) -> (Vec<i32>, Vec<i32>) {
