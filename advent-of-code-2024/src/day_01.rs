@@ -8,11 +8,7 @@ const USE_TEST_DATA : bool = false;
 pub fn part_1() -> String
 {
     let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
-
-    let mut left_numbers : Vec<i32>;
-    let mut right_numbers : Vec<i32>;
-
-    (left_numbers, right_numbers) = split_input_into_two_collections(input);
+    let (mut left_numbers, mut right_numbers) = split_input_into_two_collections(input);
 
     left_numbers.sort();
     right_numbers.sort();
@@ -28,11 +24,7 @@ pub fn part_1() -> String
 pub fn part_2() -> String
 {
     let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
-
-    let left_numbers : Vec<i32>;
-    let right_numbers : Vec<i32>;
-
-    (left_numbers, right_numbers) = split_input_into_two_collections(input);
+    let (left_numbers, right_numbers) = split_input_into_two_collections(input);
 
     let mut similarity : i32 = 0;
     for i in 0..left_numbers.len() {
