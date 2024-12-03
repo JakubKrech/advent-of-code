@@ -3,6 +3,7 @@
 # Advent of Code 2024 :christmas_tree: - Rust :crab:
 
 - **Day 1: [Historian Hysteria](advent-of-code-2024/src/day_01.rs)**
+- **Day 2: [Red-Nosed Reports](advent-of-code-2024/src/day_02.rs)**
 
 # Advent of Code 2023 :christmas_tree: - C#
 
