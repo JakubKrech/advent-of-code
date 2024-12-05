@@ -414,3 +414,11 @@ Cargo.lock
 *.pdb
 
 # End of https://www.toptal.com/developers/gitignore/api/rust
+
+# Remove Advent of Code inputs
+*advent-of-code-2022/AdventOfCode2022/Input/*
+*advent-of-code-2022/AdventOfCode2022/TestInput/*
+*advent-of-code-2023/advent-of-code-2023/Input/*
+*advent-of-code-2023/advent-of-code-2023/TestInput/*
+*advent-of-code-2024/input/*
+*advent-of-code-2024/input_test/*

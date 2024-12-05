@@ -6,6 +6,7 @@
 - **Day 2: [Red-Nosed Reports](advent-of-code-2024/src/day_02.rs)**
 - **Day 3: [Mull It Over](advent-of-code-2024/src/day_03.rs)**
 - **Day 4: [Ceres Search](advent-of-code-2024/src/day_04.rs)**
+- **Day 5: [Print Queue](advent-of-code-2024/src/day_05.rs)**
 
 # Advent of Code 2023 :christmas_tree: - C#
 
