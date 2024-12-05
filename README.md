@@ -1,4 +1,4 @@
-### Here are my C# solutions for AoC [2022](https://adventofcode.com/2022/), [2023](https://adventofcode.com/2023/) & [2024](https://adventofcode.com/2024/) - programming puzzles created by [Eric Wastl](http://was.tl/).
+### Here are my C# solutions for AoC [2018](https://adventofcode.com/2018/), [2021](https://adventofcode.com/2021/), [2022](https://adventofcode.com/2022/), [2023](https://adventofcode.com/2023/) & [2024](https://adventofcode.com/2024/) - programming puzzles created by [Eric Wastl](http://was.tl/).
 
 # Advent of Code 2024 :christmas_tree: - Rust :crab:
 
@@ -8,7 +8,7 @@
 - **Day 4: [Ceres Search](advent-of-code-2024/src/day_04.rs)**
 - **Day 5: [Print Queue](advent-of-code-2024/src/day_05.rs)**
 
-# Advent of Code 2023 :christmas_tree: - C#
+# Advent of Code 2023 :christmas_tree: - C# :star: 45/50 :star:
 
 - **Day 1: [Trebuchet?!](advent-of-code-2023/advent-of-code-2023/Solutions/Day_01.cs)**
 - **Day 2: [Cube Conundrum](advent-of-code-2023/advent-of-code-2023/Solutions/Day_02.cs)**
@@ -26,15 +26,13 @@
 - **Day 14: [Parabolic Reflector Dish](advent-of-code-2023/advent-of-code-2023/Solutions/Day_14.cs)**
 - **Day 15: [Lens Library](advent-of-code-2023/advent-of-code-2023/Solutions/Day_15.cs)**
 - **Day 16: [The Floor Will Be Lava](advent-of-code-2023/advent-of-code-2023/Solutions/Day_16.cs)**
-- **Day 17: Clumsy Crucible**
 - **Day 18: [Lavaduct Lagoon](advent-of-code-2023/advent-of-code-2023/Solutions/Day_18.cs)**
 - **Day 19: [Aplenty](advent-of-code-2023/advent-of-code-2023/Solutions/Day_19.cs)**
-- **Day 20: Pulse Propagation**
 - **Day 21: [Step Counter](advent-of-code-2023/advent-of-code-2023/Solutions/Day_21.cs)**
 - **Day 22: [Sand Slabs](advent-of-code-2023/advent-of-code-2023/Solutions/Day_22.cs)**
 - **Day 23: [A Long Walk](advent-of-code-2023/advent-of-code-2023/Solutions/Day_23.cs)**
 
-# Advent of Code 2022 :christmas_tree: - C#
+# Advent of Code 2022 :christmas_tree: - C# :star: 32/50 :star:
 
 - **Day 1: [Calorie Counting](advent-of-code-2022/AdventOfCode2022/Solutions/Day_01.cs)**
 - **Day 2: [Rock Paper Scissors](advent-of-code-2022/AdventOfCode2022/Solutions/Day_02.cs)**
@@ -51,13 +49,58 @@
 - **Day 13: [Distress Signal](advent-of-code-2022/AdventOfCode2022/Solutions/Day_13.cs)**
 - **Day 14: [Regolith Reservoir](advent-of-code-2022/AdventOfCode2022/Solutions/Day_14.cs)**
 - **Day 15: [Beacon Exclusion Zone](advent-of-code-2022/AdventOfCode2022/Solutions/Day_15.cs)**
-- **Day 16: Proboscidea Volcanium**
-- **Day 17: Pyroclastic Flow**
 - **Day 18: [Boiling Boulders](advent-of-code-2022/AdventOfCode2022/Solutions/Day_18.cs)**
-- **Day 19: Not Enough Minerals**
-- **Day 20: Grove Positioning System**
 - **Day 21: [Monkey Math](advent-of-code-2022/AdventOfCode2022/Solutions/Day_21.cs)**
-- **Day 22: Monkey Map**
-- **Day 23: Unstable Diffusion**
 - **Day 24: [Blizzard Basin](advent-of-code-2022/AdventOfCode2022/Solutions/Day_24.cs)**
-- **Day 25: Full of Hot Air**
+
+# Advent of Code 2021 :christmas_tree: - Python :snake: :star: 50/50 :star:
+
+- **Day 1: [Sonar Sweep](advent-of-code-2021/day_01.py)**
+- **Day 2: [Dive!](advent-of-code-2021/day_02.py)**
+- **Day 3: [Binary Diagnostic](advent-of-code-2021/day_03.py)**
+- **Day 4: [Giant Squid](advent-of-code-2021/day_04.py)**
+- **Day 5: [Hydrothermal Venture](advent-of-code-2021/day_05.py)**
+- **Day 6: [Lanternfish](advent-of-code-2021/day_06.py)**
+- **Day 7: [he Treachery of Whales](advent-of-code-2021/day_07.py)**
+- **Day 8: [Seven Segment Search](advent-of-code-2021/day_08.py)**
+- **Day 9: [Smoke Basin](advent-of-code-2021/day_09.py)**
+- **Day 10: [Syntax Scoring](advent-of-code-2021/day_10.py)**
+- **Day 11: [Dumbo Octopus](advent-of-code-2021/day_11.py)**
+- **Day 12: [Passage Pathing](advent-of-code-2021/day_12.py)**
+- **Day 13: [Transparent Origami](advent-of-code-2021/day_13.py)**
+- **Day 14: [Extended Polymerization](advent-of-code-2021/day_14.py)**
+- **Day 15: [Chiton](advent-of-code-2021/day_14.py)**
+- **Day 16: [Packet Decoder](advent-of-code-2021/day_16.py)**
+- **Day 17: [Trick Shot](advent-of-code-2021/day_17.py)**
+- **Day 18: [Snailfish](advent-of-code-2021/day_18.py)**
+- **Day 19: [Beacon Scanner](advent-of-code-2021/day_19.py)**
+- **Day 20: [Trench Map](advent-of-code-2021/day_20.py)**
+- **Day 21: [Dirac Dice](advent-of-code-2021/day_21.py)**
+- **Day 22: [Reactor Reboot](advent-of-code-2021/day_21.py)**
+- **Day 23: [Amphipod](advent-of-code-2021/day_21.py)**
+- **Day 24: [Arithmetic Logic Unit](advent-of-code-2021/day_21.py)**
+- **Day 25: [Sea Cucumber](advent-of-code-2021/day_21.py)**
+
+
+# Advent of Code 2018 :christmas_tree: - C++ :star: 42/50 :star:
+
+- **Day 1: [Chronal Calibration](advent-of-code-2018/Day_01.cpp)**
+- **Day 2: [Inventory Management System](advent-of-code-2018/Day_02.cpp)**
+- **Day 3: [No Matter How You Slice It](advent-of-code-2018/Day_03.cpp)**
+- **Day 4: [Repose Record](advent-of-code-2018/Day_04.cpp)**
+- **Day 5: [Alchemical Reduction](advent-of-code-2018/Day_05.cpp)**
+- **Day 6: [Chronal Coordinates](advent-of-code-2018/Day_06.cpp)**
+- **Day 7: [The Sum of Its Parts](advent-of-code-2018/Day_07.cpp)**
+- **Day 8: [Memory Maneuver](advent-of-code-2018/Day_08.cpp)**
+- **Day 9: [Marble Mania](advent-of-code-2018/Day_09.cpp)**
+- **Day 10: [The Stars Align](advent-of-code-2018/Day_10.cpp)**
+- **Day 11: [Chronal Charge](advent-of-code-2018/Day_11.cpp)**
+- **Day 12: [Subterranean Sustainability](advent-of-code-2018/Day_12.cpp)**
+- **Day 13: [Mine Cart Madness](advent-of-code-2018/Day_13.cpp)**
+- **Day 14: [Chocolate Charts](advent-of-code-2018/Day_14.cpp)**
+- **Day 16: [Chronal Classification](advent-of-code-2018/Day_16.cpp)**
+- **Day 17: [Reservoir Research](advent-of-code-2018/Day_17.cpp)**
+- **Day 18: [Settlers of The North Pole](advent-of-code-2018/Day_18.cpp)**
+- **Day 19: [Go With The Flow](advent-of-code-2018/Day_19.cpp)**
+- **Day 20: [A Regular Map](advent-of-code-2018/Day_20.cpp)**
+- **Day 21: [Chronal Conversion](advent-of-code-2018/Day_21.cpp)**
