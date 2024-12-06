@@ -48,24 +48,15 @@ pub fn part_1() -> String
 
         for i in 0..pages.len() {
             if required_predecessors.contains_key(pages[i]) {
-                for req_pred in &required_predecessors[pages[i]] {
-                    for p in &pages[i+1..] {
-                        if p.to_string() == req_pred.to_string() {
-                            //println!("Rule broken ({}): {}, {}", page_to_print, p, req_pred);
-                            rule_broken = true;
-                            break;
-                        }
-                    }
-                    if rule_broken { break; }
+                if pages[i+1..].iter().any(|item| required_predecessors[pages[i]].contains(&item.to_string())) {
+                    rule_broken = true;
+                    break;
                 }
             }
-            if rule_broken { break; }
         }
 
         if !rule_broken {
-            let page_count = pages.len();
-            //println!("No rules broken, adding: {} - {}", page_to_print, pages[page_count / 2]);
-            result += pages[page_count / 2].parse::<i32>().expect("Failed to parse");
+            result += pages[pages.len() / 2].parse::<i32>().expect("Failed to parse");
         }
     }
 
@@ -81,7 +72,7 @@ pub fn part_2() -> String
 
     let mut result : i32 = 0;
 
-    let mut all_rules_read :bool = false;
+    let mut all_rules_read : bool = false;
 
     for line in input {
         if line == "" {
@@ -111,22 +102,14 @@ pub fn part_2() -> String
     // Go over the pages to print and check all elements on the right of current page number
     for page_to_print in pages_to_print {
         let pages : Vec<&str> = page_to_print.split_terminator(',').collect();
-        let mut rule_broken : bool = false;
 
         for i in 0..pages.len() {
             if required_predecessors.contains_key(pages[i]) {
-                for req_pred in &required_predecessors[pages[i]] {
-                    for p in &pages[i+1..] {
-                        if p.to_string() == req_pred.to_string() {
-                            rule_broken = true;
-                            incorrect_pages_to_print.push(page_to_print.clone());
-                            break;
-                        }
-                    }
-                    if rule_broken { break; }
+                if pages[i+1..].iter().any(|item| required_predecessors[pages[i]].contains(&item.to_string())) {
+                    incorrect_pages_to_print.push(page_to_print);
+                    break;
                 }
             }
-            if rule_broken { break; }
         }
     }
 
@@ -158,8 +141,7 @@ pub fn part_2() -> String
             }
         }
 
-        let page_count = ordered.len();
-        result += ordered[page_count / 2].parse::<i32>().expect("Failed to parse");
+        result += ordered[ordered.len() / 2].parse::<i32>().expect("Failed to parse");
     }
 
     return result.to_string();
