@@ -202,6 +202,9 @@ pub fn part_2() -> String
     let mut obstruction_y : usize = 0;
     let mut obstruction_x : usize = 0;
     let mut result : i32 = 0;
+
+    let mut bumps_locations_stringified : HashSet<String> = HashSet::new();
+    bumps_locations_stringified.reserve(1000);
     
     // Following guard path check every position for possible loop creating obstruction
     for (y, x) in unique_guards_locations {
@@ -217,24 +220,24 @@ pub fn part_2() -> String
         obstruction_x = x;
         grid[obstruction_y][obstruction_x] = '#';
 
-        epoch = 0;
+        // Remember locations and directions where guard bumped off the obstructions. If he does the same bump twice, its a loop.
+        bumps_locations_stringified.clear();
 
-        // Move around until unreasonable number of epochs happens, meaning we are stuck in a loop.
-        // This could be improved by some smart loop detection.
         loop {
-            if epoch > 10000 {
-                result += 1;
-                break;
-            }
-
-            epoch += 1;
-            grid[cur_y][cur_x] = 'X';
-
             // moving up
             if cur_rot == '^' {
                 if cur_y == 0 { break; }
 
                 if grid[cur_y - 1][cur_x] == '#' {
+
+                    let stringified = format!("{}{}{}", cur_y, cur_x, cur_rot);
+                    if bumps_locations_stringified.contains(&stringified) {
+                        result += 1;
+                        break;
+                    } else {
+                        bumps_locations_stringified.insert(stringified);
+                    }
+
                     cur_rot = '>';
                 }
                 else {
@@ -247,6 +250,15 @@ pub fn part_2() -> String
                 if cur_x == x_size - 1 { break; }
 
                 if grid[cur_y][cur_x + 1] == '#' {
+
+                    let stringified = format!("{}{}{}", cur_y, cur_x, cur_rot);
+                    if bumps_locations_stringified.contains(&stringified) {
+                        result += 1;
+                        break;
+                    } else {
+                        bumps_locations_stringified.insert(stringified);
+                    }
+
                     cur_rot = 'v';
                 }
                 else {
@@ -255,10 +267,19 @@ pub fn part_2() -> String
             } 
 
             // moving down
-            if cur_rot == 'v' {
+            else if cur_rot == 'v' {
                 if cur_y == y_size - 1 { break; }
 
                 if grid[cur_y + 1][cur_x] == '#' {
+
+                    let stringified = format!("{}{}{}", cur_y, cur_x, cur_rot);
+                    if bumps_locations_stringified.contains(&stringified) {
+                        result += 1;
+                        break;
+                    } else {
+                        bumps_locations_stringified.insert(stringified);
+                    }
+
                     cur_rot = '<';
                 }
                 else {
@@ -267,10 +288,19 @@ pub fn part_2() -> String
             }
 
             // moving left
-            if cur_rot == '<' {
+            else if cur_rot == '<' {
                 if cur_x == 0 { break; }
 
                 if grid[cur_y][cur_x - 1] == '#' {
+
+                    let stringified = format!("{}{}{}", cur_y, cur_x, cur_rot);
+                    if bumps_locations_stringified.contains(&stringified) {
+                        result += 1;
+                        break;
+                    } else {
+                        bumps_locations_stringified.insert(stringified);
+                    }
+
                     cur_rot = '^';
                 }
                 else {
