@@ -8,6 +8,7 @@
 - **Day 4: [Ceres Search](advent-of-code-2024/src/day_04.rs)**
 - **Day 5: [Print Queue](advent-of-code-2024/src/day_05.rs)**
 - **Day 6: [Guard Gallivant](advent-of-code-2024/src/day_06.rs)**
+- **Day 7: [Bridge Repair](advent-of-code-2024/src/day_07.rs)**
 
 # Advent of Code 2023 :christmas_tree: - C# :star: 45/50 :star:
 

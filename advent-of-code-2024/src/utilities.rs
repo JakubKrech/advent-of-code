@@ -1,7 +1,7 @@
 use std::fs;
 use std::time::Instant;
 
-const TEST_RUNS : u32 = 1000; // Set to 1 during development
+const TEST_RUNS : u32 = 10; // Set to 1 during development
 
 pub fn run_solution(day: &str, part_1: &dyn Fn() -> String, part_2: &dyn Fn() -> String) {
     

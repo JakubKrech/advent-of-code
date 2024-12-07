@@ -115,7 +115,6 @@ pub fn part_2() -> String
     let mut cur_x: usize = 0;
     let mut cur_y: usize = 0;
     let mut cur_rot = '^';
-    let mut epoch : usize = 0;
 
     // Get the grid size
     let x_size : usize = input[0].len();
@@ -144,7 +143,6 @@ pub fn part_2() -> String
 
     // Move and paint the floor until leaving the board
     loop {
-        epoch += 1;
         grid[cur_y][cur_x] = 'X';
         guard_locations.push((cur_y, cur_x));
 
