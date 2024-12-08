@@ -6,6 +6,7 @@ use regex::Regex;
 const DAY_STRING : &str = "day_03";
 const USE_TEST_DATA : bool = false;
 
+#[allow(dead_code)]
 pub fn part_1() -> String
 {
     let input : Vec<String>;
@@ -31,6 +32,7 @@ pub fn part_1() -> String
     return sum.to_string();
 }
 
+#[allow(dead_code)]
 pub fn part_2() -> String
 {
     let input : Vec<String>;

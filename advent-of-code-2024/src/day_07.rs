@@ -7,11 +7,13 @@ use crate::utilities::get_input_lines;
 const DAY_STRING : &str = "day_07";
 const USE_TEST_DATA : bool = false;
 
+#[allow(dead_code)]
 pub fn part_1() -> String
 {
     return calculate_calibration_result(&get_input_lines(DAY_STRING, USE_TEST_DATA), false).to_string();
 }
 
+#[allow(dead_code)]
 pub fn part_2() -> String
 {
     return calculate_calibration_result(&get_input_lines(DAY_STRING, USE_TEST_DATA), true).to_string();
