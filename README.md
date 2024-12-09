@@ -10,6 +10,7 @@
 - **Day 6: [Guard Gallivant](advent-of-code-2024/src/day_06.rs)**
 - **Day 7: [Bridge Repair](advent-of-code-2024/src/day_07.rs)**
 - **Day 8: [Resonant Collinearity](advent-of-code-2024/src/day_08.rs)**
+- **Day 8: [Disk Fragmenter](advent-of-code-2024/src/day_09.rs)**
 
 # Advent of Code 2023 :christmas_tree: - C# :star: 45/50 :star:
 
