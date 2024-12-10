@@ -7,6 +7,7 @@ const USE_TEST_DATA : bool = false;
 
 const EMPTY_DISK_SPACE : i32 = -1;
 
+#[allow(dead_code)]
 pub fn part_1() -> String
 {
     let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
@@ -85,6 +86,7 @@ pub fn part_1() -> String
     return result.to_string();
 }
 
+#[allow(dead_code)]
 pub fn part_2() -> String
 {
     let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
