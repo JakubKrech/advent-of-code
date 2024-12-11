@@ -22,8 +22,8 @@ pub fn run_solution(day: &str, part_1: &dyn Fn() -> String, part_2: &dyn Fn() ->
     let part_2_time_elapsed = before.elapsed() / TEST_RUNS;
 
     println!("\n-- Day {} --", day);
-    println!(" Part 1: {:15} elapsed: {:.2?} (average of {} runs)", part_1_result, part_1_time_elapsed, TEST_RUNS);
-    println!(" Part 2: {:15} elapsed: {:.2?} (average of {} runs)", part_2_result, part_2_time_elapsed, TEST_RUNS);
+    println!(" Part 1: {:20} elapsed: {:.2?} (average of {} runs)", part_1_result, part_1_time_elapsed, TEST_RUNS);
+    println!(" Part 2: {:20} elapsed: {:.2?} (average of {} runs)", part_2_result, part_2_time_elapsed, TEST_RUNS);
 }
 
 pub fn get_input_lines(day_string : &str, use_test_data : bool) -> Vec<String> {
