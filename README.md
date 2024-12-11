@@ -1,11 +1,11 @@
 ### Here are my C# solutions for AoC [2018](https://adventofcode.com/2018/), [2021](https://adventofcode.com/2021/), [2022](https://adventofcode.com/2022/), [2023](https://adventofcode.com/2023/) & [2024](https://adventofcode.com/2024/) - programming puzzles created by [Eric Wastl](http://was.tl/).
 
 | Year/Day | Language    |      1     |      2     |      3     |      4     |      5     |      6     |      7     |      8     |      9     |     10     |     11     |     12     |     13     |     14     |     15     |     16     |     17     |     18     |     19     |     20     |     21     |     22     |     23     |     24     |     25     |
-|:--------:|:------------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+|:--------:|:-----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 | **2018** |             |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
 | **2021** |             |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
 | **2022** |             |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
-| **2023** |             |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
+| **2023** | C#          |[:star:][f1]|[:star:][f2]|[:star:][f3]|[:star:][f4]|[:star:][f5]|[:star:][f6]|[:star:][f7]|[:star:][f8]|[:star:][f9]|[:star:][fa]|[:star:][fb]|[:star:][fc]|[:star:][fd]|[:star:][fe]|[:star:][ff]|[:star:][fg]|            |[:star:][fi]|[:star:][fj]|            |[:star:][fl]|[:star:][fm]|[:star:][fn]|            |            |
 | **2024** | Rust :crab: |[:star:][g1]|[:star:][g2]|[:star:][g3]|[:star:][g4]|[:star:][g5]|[:star:][g6]|[:star:][g7]|[:star:][g8]|[:star:][g9]|[:star:][ga]|[:star:][gb]|            |            |            |            |            |            |            |            |            |            |            |            |            |            |
 
 # Advent of Code 2024 :christmas_tree: - Rust :crab:
@@ -33,7 +33,6 @@
 [g9]: advent-of-code-2024/src/day_09.rs
 [ga]: advent-of-code-2024/src/day_10.rs
 [gb]: advent-of-code-2024/src/day_11.rs
-[gc]: advent-of-code-2024/src/day_12.rs
 
 # Advent of Code 2023 :christmas_tree: - C# :star: 45/50 :star:
 
@@ -58,6 +57,28 @@
 - **Day 21: [Step Counter](advent-of-code-2023/advent-of-code-2023/Solutions/Day_21.cs)**
 - **Day 22: [Sand Slabs](advent-of-code-2023/advent-of-code-2023/Solutions/Day_22.cs)**
 - **Day 23: [A Long Walk](advent-of-code-2023/advent-of-code-2023/Solutions/Day_23.cs)**
+
+[f1]: advent-of-code-2023/src/Day_01.cs
+[f2]: advent-of-code-2023/src/Day_02.cs
+[f3]: advent-of-code-2023/src/Day_03.cs
+[f4]: advent-of-code-2023/src/Day_04.cs
+[f5]: advent-of-code-2023/src/Day_05.cs
+[f6]: advent-of-code-2023/src/Day_06.cs
+[f7]: advent-of-code-2023/src/Day_07.cs
+[f8]: advent-of-code-2023/src/Day_08.cs
+[f9]: advent-of-code-2023/src/Day_09.cs
+[fa]: advent-of-code-2023/src/Day_10.cs
+[fb]: advent-of-code-2023/src/Day_11.cs
+[fc]: advent-of-code-2023/src/Day_12.cs
+[fd]: advent-of-code-2023/src/Day_13.cs
+[fe]: advent-of-code-2023/src/Day_14.cs
+[ff]: advent-of-code-2023/src/Day_15.cs
+[fg]: advent-of-code-2023/src/Day_16.cs
+[fi]: advent-of-code-2023/src/Day_18.cs
+[fj]: advent-of-code-2023/src/Day_19.cs
+[fl]: advent-of-code-2023/src/Day_21.cs
+[fm]: advent-of-code-2023/src/Day_22.cs
+[fn]: advent-of-code-2023/src/Day_23.cs
 
 # Advent of Code 2022 :christmas_tree: - C# :star: 32/50 :star:
 
