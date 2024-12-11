@@ -1,18 +1,39 @@
 ### Here are my C# solutions for AoC [2018](https://adventofcode.com/2018/), [2021](https://adventofcode.com/2021/), [2022](https://adventofcode.com/2022/), [2023](https://adventofcode.com/2023/) & [2024](https://adventofcode.com/2024/) - programming puzzles created by [Eric Wastl](http://was.tl/).
 
+| Year/Day |      1     |      2     |      3     |      4     |      5     |      6     |      7     |      8     |      9     |     10     |     11     |     12     |     13     |     14     |     15     |     16     |     17     |     18     |     19     |     20     |     21     |     22     |     23     |     24     |     25     | Language    |
+|:--------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:------------|
+| **2018** |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |             |
+| **2021** |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |             |
+| **2022** |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |             |
+| **2023** |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |             |
+| **2024** |[:star:][g1]|[:star:][g2]|[:star:][g3]|[:star:][g4]|[:star:][g5]|[:star:][g6]|[:star:][g7]|[:star:][g8]|[:star:][g9]|[:star:][ga]|[:star:][gb]|            |            |            |            |            |            |            |            |            |            |            |            |            |            | Rust :crab: |
+
 # Advent of Code 2024 :christmas_tree: - Rust :crab:
 
-- **Day 1: [Historian Hysteria](advent-of-code-2024/src/day_01.rs)**
-- **Day 2: [Red-Nosed Reports](advent-of-code-2024/src/day_02.rs)**
-- **Day 3: [Mull It Over](advent-of-code-2024/src/day_03.rs)**
-- **Day 4: [Ceres Search](advent-of-code-2024/src/day_04.rs)**
-- **Day 5: [Print Queue](advent-of-code-2024/src/day_05.rs)**
-- **Day 6: [Guard Gallivant](advent-of-code-2024/src/day_06.rs)**
-- **Day 7: [Bridge Repair](advent-of-code-2024/src/day_07.rs)**
-- **Day 8: [Resonant Collinearity](advent-of-code-2024/src/day_08.rs)**
-- **Day 9: [Disk Fragmenter](advent-of-code-2024/src/day_09.rs)**
-- **Day 10: [Hoof It](advent-of-code-2024/src/day_10.rs)**
-- **Day 11: [Plutonian Pebbles](advent-of-code-2024/src/day_11.rs)**
+- **Day 1: [Historian Hysteria][g1]**
+- **Day 2: [Red-Nosed Reports][g2]**
+- **Day 3: [Mull It Over][g3]**
+- **Day 4: [Ceres Search][g4]**
+- **Day 5: [Print Queue][g5]**
+- **Day 6: [Guard Gallivant][g6]**
+- **Day 7: [Bridge Repair][g7]**
+- **Day 8: [Resonant Collinearity][g8]**
+- **Day 9: [Disk Fragmenter][g9]**
+- **Day 10: [Hoof It][ga]**
+- **Day 11: [Plutonian Pebbles][gb]**
+
+[g1]: advent-of-code-2024/src/day_01.rs
+[g2]: advent-of-code-2024/src/day_02.rs
+[g3]: advent-of-code-2024/src/day_03.rs
+[g4]: advent-of-code-2024/src/day_04.rs
+[g5]: advent-of-code-2024/src/day_05.rs
+[g6]: advent-of-code-2024/src/day_06.rs
+[g7]: advent-of-code-2024/src/day_07.rs
+[g8]: advent-of-code-2024/src/day_08.rs
+[g9]: advent-of-code-2024/src/day_09.rs
+[ga]: advent-of-code-2024/src/day_10.rs
+[gb]: advent-of-code-2024/src/day_11.rs
+[gc]: advent-of-code-2024/src/day_12.rs
 
 # Advent of Code 2023 :christmas_tree: - C# :star: 45/50 :star:
 
@@ -110,14 +131,3 @@
 - **Day 19: [Go With The Flow](advent-of-code-2018/Day_19.cpp)**
 - **Day 20: [A Regular Map](advent-of-code-2018/Day_20.cpp)**
 - **Day 21: [Chronal Conversion](advent-of-code-2018/Day_21.cpp)**
-
-| Year/Day |      1     |      2     |      3     |      4     |      5     |      6     |      7     |      8     |      9     |     10     |     11     |     12     |     13     |     14     |     15     |     16     |     17     |     18     |     19     |     20     |     21     |     22     |     23     |     24     |     25     | Language |
-|:--------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:---------|
-| **2018** |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |          |
-| **2021** |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |          |
-| **2022** |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |          |
-| **2023** |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |          |
-| **2024** |[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]|[:star:][g1]| Rust     |
-
-[a1]: http://example.com/whatever
-[g1]: advent-of-code-2024/src/day_11.rs
