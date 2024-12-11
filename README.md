@@ -58,27 +58,27 @@
 - **Day 22: [Sand Slabs](advent-of-code-2023/advent-of-code-2023/Solutions/Day_22.cs)**
 - **Day 23: [A Long Walk](advent-of-code-2023/advent-of-code-2023/Solutions/Day_23.cs)**
 
-[f1]: advent-of-code-2023/src/Day_01.cs
-[f2]: advent-of-code-2023/src/Day_02.cs
-[f3]: advent-of-code-2023/src/Day_03.cs
-[f4]: advent-of-code-2023/src/Day_04.cs
-[f5]: advent-of-code-2023/src/Day_05.cs
-[f6]: advent-of-code-2023/src/Day_06.cs
-[f7]: advent-of-code-2023/src/Day_07.cs
-[f8]: advent-of-code-2023/src/Day_08.cs
-[f9]: advent-of-code-2023/src/Day_09.cs
-[fa]: advent-of-code-2023/src/Day_10.cs
-[fb]: advent-of-code-2023/src/Day_11.cs
-[fc]: advent-of-code-2023/src/Day_12.cs
-[fd]: advent-of-code-2023/src/Day_13.cs
-[fe]: advent-of-code-2023/src/Day_14.cs
-[ff]: advent-of-code-2023/src/Day_15.cs
-[fg]: advent-of-code-2023/src/Day_16.cs
-[fi]: advent-of-code-2023/src/Day_18.cs
-[fj]: advent-of-code-2023/src/Day_19.cs
-[fl]: advent-of-code-2023/src/Day_21.cs
-[fm]: advent-of-code-2023/src/Day_22.cs
-[fn]: advent-of-code-2023/src/Day_23.cs
+[f1]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_01.cs
+[f2]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_02.cs
+[f3]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_03.cs
+[f4]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_04.cs
+[f5]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_05.cs
+[f6]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_06.cs
+[f7]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_07.cs
+[f8]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_08.cs
+[f9]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_09.cs
+[fa]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_10.cs
+[fb]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_11.cs
+[fc]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_12.cs
+[fd]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_13.cs
+[fe]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_14.cs
+[ff]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_15.cs
+[fg]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_16.cs
+[fi]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_18.cs
+[fj]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_19.cs
+[fl]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_21.cs
+[fm]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_22.cs
+[fn]: advent-of-code-2023/advent-of-code-2023/Solutions/Day_23.cs
 
 # Advent of Code 2022 :christmas_tree: - C# :star: 32/50 :star:
 
