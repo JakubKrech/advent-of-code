@@ -6,7 +6,7 @@
 | **2021** |             |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
 | **2022** |             |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
 | **2023** | C#          |[:star:][f1]|[:star:][f2]|[:star:][f3]|[:star:][f4]|[:star:][f5]|[:star:][f6]|[:star:][f7]|[:star:][f8]|[:star:][f9]|[:star:][fa]|[:star:][fb]|[:star:][fc]|[:star:][fd]|[:star:][fe]|[:star:][ff]|[:star:][fg]|            |[:star:][fi]|[:star:][fj]|            |[:star:][fl]|[:star:][fm]|[:star:][fn]|            |            |
-| **2024** | Rust :crab: |[:star:][g1]|[:star:][g2]|[:star:][g3]|[:star:][g4]|[:star:][g5]|[:star:][g6]|[:star:][g7]|[:star:][g8]|[:star:][g9]|[:star:][ga]|[:star:][gb]|            |            |            |            |            |            |            |            |            |            |            |            |            |            |
+| **2024** | Rust :crab: |[:star:][g1]|[:star:][g2]|[:star:][g3]|[:star:][g4]|[:star:][g5]|[:star:][g6]|[:star:][g7]|[:star:][g8]|[:star:][g9]|[:star:][ga]|[:star:][gb]|[:star:][gc]|            |            |            |            |            |            |            |            |            |            |            |            |            |
 
 # Advent of Code 2024 :christmas_tree: - Rust :crab:
 
@@ -21,6 +21,7 @@
 - **Day 9: [Disk Fragmenter][g9]**
 - **Day 10: [Hoof It][ga]**
 - **Day 11: [Plutonian Pebbles][gb]**
+- **Day 11: [Plutonian Pebbles][gc]**
 
 [g1]: advent-of-code-2024/src/day_01.rs
 [g2]: advent-of-code-2024/src/day_02.rs
@@ -33,6 +34,7 @@
 [g9]: advent-of-code-2024/src/day_09.rs
 [ga]: advent-of-code-2024/src/day_10.rs
 [gb]: advent-of-code-2024/src/day_11.rs
+[gb]: advent-of-code-2024/src/day_12.rs
 
 # Advent of Code 2023 :christmas_tree: - C# :star: 45/50 :star:
 
