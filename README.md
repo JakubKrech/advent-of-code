@@ -34,7 +34,7 @@
 [g9]: advent-of-code-2024/src/day_09.rs
 [ga]: advent-of-code-2024/src/day_10.rs
 [gb]: advent-of-code-2024/src/day_11.rs
-[gb]: advent-of-code-2024/src/day_12.rs
+[gc]: advent-of-code-2024/src/day_12.rs
 
 # Advent of Code 2023 :christmas_tree: - C# :star: 45/50 :star:
 
