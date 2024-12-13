@@ -5,6 +5,22 @@ use crate::utilities::get_input_lines;
 const DAY_STRING : &str = "day_13";
 const USE_TEST_DATA : bool = false;
 
+#[allow(dead_code)]
+pub fn part_1() -> String
+{
+    let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
+
+    return get_total_tokens_required(input, 0.0).to_string();
+}
+
+#[allow(dead_code)]
+pub fn part_2() -> String
+{
+    let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
+
+    return get_total_tokens_required(input, 10000000000000.0).to_string();
+}
+
 fn get_total_tokens_required(input : Vec<String>, claw_error : f64) -> f64 {
     let mut total_tokens_required  = 0.0;
     let token_a_cost = 3.0;
@@ -49,20 +65,4 @@ fn get_total_tokens_required(input : Vec<String>, claw_error : f64) -> f64 {
     }
 
     return total_tokens_required;
-}
-
-#[allow(dead_code)]
-pub fn part_1() -> String
-{
-    let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
-
-    return get_total_tokens_required(input, 0.0).to_string();
-}
-
-#[allow(dead_code)]
-pub fn part_2() -> String
-{
-    let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
-
-    return get_total_tokens_required(input, 10000000000000.0).to_string();
 }
