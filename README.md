@@ -133,31 +133,31 @@
 - **Day 24: [Arithmetic Logic Unit](advent-of-code-2021/day_21.py)**
 - **Day 25: [Sea Cucumber](advent-of-code-2021/day_21.py)**
 
-[d1]: advent-of-code-2021/Solutions/day_01.py
-[d2]: advent-of-code-2021/Solutions/day_02.py
-[d3]: advent-of-code-2021/Solutions/day_03.py
-[d4]: advent-of-code-2021/Solutions/day_04.py
-[d5]: advent-of-code-2021/Solutions/day_05.py
-[d6]: advent-of-code-2021/Solutions/day_06.py
-[d7]: advent-of-code-2021/Solutions/day_07.py
-[d8]: advent-of-code-2021/Solutions/day_08.py
-[d9]: advent-of-code-2021/Solutions/day_09.py
-[da]: advent-of-code-2021/Solutions/day_10.py
-[db]: advent-of-code-2021/Solutions/day_11.py
-[dc]: advent-of-code-2021/Solutions/day_12.py
-[dd]: advent-of-code-2021/Solutions/day_13.py
-[de]: advent-of-code-2021/Solutions/day_14.py
-[df]: advent-of-code-2021/Solutions/day_15.py
-[dg]: advent-of-code-2021/Solutions/day_16.py
-[dh]: advent-of-code-2021/Solutions/day_17.py
-[di]: advent-of-code-2021/Solutions/day_18.py
-[dj]: advent-of-code-2021/Solutions/day_19.py
-[dk]: advent-of-code-2021/Solutions/day_20.py
-[dl]: advent-of-code-2021/Solutions/day_21.py
-[dm]: advent-of-code-2021/Solutions/day_22.py
-[dn]: advent-of-code-2021/Solutions/day_23.py
-[do]: advent-of-code-2021/Solutions/day_24.py
-[dp]: advent-of-code-2021/Solutions/day_25.py
+[d1]: advent-of-code-2021/day_01.py
+[d2]: advent-of-code-2021/day_02.py
+[d3]: advent-of-code-2021/day_03.py
+[d4]: advent-of-code-2021/day_04.py
+[d5]: advent-of-code-2021/day_05.py
+[d6]: advent-of-code-2021/day_06.py
+[d7]: advent-of-code-2021/day_07.py
+[d8]: advent-of-code-2021/day_08.py
+[d9]: advent-of-code-2021/day_09.py
+[da]: advent-of-code-2021/day_10.py
+[db]: advent-of-code-2021/day_11.py
+[dc]: advent-of-code-2021/day_12.py
+[dd]: advent-of-code-2021/day_13.py
+[de]: advent-of-code-2021/day_14.py
+[df]: advent-of-code-2021/day_15.py
+[dg]: advent-of-code-2021/day_16.py
+[dh]: advent-of-code-2021/day_17.py
+[di]: advent-of-code-2021/day_18.py
+[dj]: advent-of-code-2021/day_19.py
+[dk]: advent-of-code-2021/day_20.py
+[dl]: advent-of-code-2021/day_21.py
+[dm]: advent-of-code-2021/day_22.py
+[dn]: advent-of-code-2021/day_23.py
+[do]: advent-of-code-2021/day_24.py
+[dp]: advent-of-code-2021/day_25.py
 
 
 # Advent of Code 2018 :christmas_tree: - C++ :star: 42/50 :star:
