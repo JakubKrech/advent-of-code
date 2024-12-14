@@ -2,9 +2,9 @@
 
 | Year/Day | Language    |      1     |      2     |      3     |      4     |      5     |      6     |      7     |      8     |      9     |     10     |     11     |     12     |     13     |     14     |     15     |     16     |     17     |     18     |     19     |     20     |     21     |     22     |     23     |     24     |     25     |
 |:--------:|:-----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
-| **2018** |             |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
-| **2021** |             |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
-| **2022** |             |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
+| **2018** | C++         |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
+| **2021** | Python      |[:star:][d1]|[:star:][d2]|[:star:][d3]|[:star:][d4]|[:star:][d5]|[:star:][d6]|[:star:][d7]|[:star:][d8]|[:star:][d9]|[:star:][da]|[:star:][db]|[:star:][dc]|[:star:][dd]|[:star:][de]|[:star:][df]|[:star:][dg]|[:star:][dh]|[:star:][di]|[:star:][dj]|[:star:][dk]|[:star:][dl]|[:star:][dm]|[:star:][dn]|[:star:][do]|[:star:][dp]|
+| **2022** | C#          |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
 | **2023** | C#          |[:star:][f1]|[:star:][f2]|[:star:][f3]|[:star:][f4]|[:star:][f5]|[:star:][f6]|[:star:][f7]|[:star:][f8]|[:star:][f9]|[:star:][fa]|[:star:][fb]|[:star:][fc]|[:star:][fd]|[:star:][fe]|[:star:][ff]|[:star:][fg]|            |[:star:][fi]|[:star:][fj]|            |[:star:][fl]|[:star:][fm]|[:star:][fn]|            |            |
 | **2024** | Rust :crab: |[:star:][g1]|[:star:][g2]|[:star:][g3]|[:star:][g4]|[:star:][g5]|[:star:][g6]|[:star:][g7]|[:star:][g8]|[:star:][g9]|[:star:][ga]|[:star:][gb]|[:star:][gc]|[:star:][gd]|            |            |            |            |            |            |            |            |            |            |            |            |
 
@@ -132,6 +132,32 @@
 - **Day 23: [Amphipod](advent-of-code-2021/day_21.py)**
 - **Day 24: [Arithmetic Logic Unit](advent-of-code-2021/day_21.py)**
 - **Day 25: [Sea Cucumber](advent-of-code-2021/day_21.py)**
+
+[d1]: advent-of-code-2021/Solutions/day_01.py
+[d2]: advent-of-code-2021/Solutions/day_02.py
+[d3]: advent-of-code-2021/Solutions/day_03.py
+[d4]: advent-of-code-2021/Solutions/day_04.py
+[d5]: advent-of-code-2021/Solutions/day_05.py
+[d6]: advent-of-code-2021/Solutions/day_06.py
+[d7]: advent-of-code-2021/Solutions/day_07.py
+[d8]: advent-of-code-2021/Solutions/day_08.py
+[d9]: advent-of-code-2021/Solutions/day_09.py
+[da]: advent-of-code-2021/Solutions/day_10.py
+[db]: advent-of-code-2021/Solutions/day_11.py
+[dc]: advent-of-code-2021/Solutions/day_12.py
+[dd]: advent-of-code-2021/Solutions/day_13.py
+[de]: advent-of-code-2021/Solutions/day_14.py
+[df]: advent-of-code-2021/Solutions/day_15.py
+[dg]: advent-of-code-2021/Solutions/day_16.py
+[dh]: advent-of-code-2021/Solutions/day_17.py
+[di]: advent-of-code-2021/Solutions/day_18.py
+[dj]: advent-of-code-2021/Solutions/day_19.py
+[dk]: advent-of-code-2021/Solutions/day_20.py
+[dl]: advent-of-code-2021/Solutions/day_21.py
+[dm]: advent-of-code-2021/Solutions/day_22.py
+[dn]: advent-of-code-2021/Solutions/day_23.py
+[do]: advent-of-code-2021/Solutions/day_24.py
+[dp]: advent-of-code-2021/Solutions/day_25.py
 
 
 # Advent of Code 2018 :christmas_tree: - C++ :star: 42/50 :star:
