@@ -1,7 +1,7 @@
 use std::fs;
 use std::time::Instant;
 
-const TEST_RUNS : u32 = 10; // Set to 1 during development
+const TEST_RUNS : u32 = 1; // Set to 1 during development
 
 pub fn run_solution(day: &str, part_1: &dyn Fn() -> String, part_2: &dyn Fn() -> String) {
     
@@ -39,4 +39,14 @@ pub fn get_input_lines(day_string : &str, use_test_data : bool) -> Vec<String> {
         .collect();
 
     return data;
+}
+
+#[allow(dead_code)]
+pub fn print_grid(grid : &mut[&mut[char]], y_size : usize, x_size : usize) {
+    for y in 0..y_size {
+        for x in 0..x_size {
+            print!("{}", grid[y][x]);
+        }
+        println!("");
+    }
 }
