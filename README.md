@@ -26,6 +26,7 @@
 - **Day 14: [Restroom Redoubt][ge]**
 - **Day 15: [Warehouse Woes][gf]**
 - **Day 16: [Reindeer Maze][gg]**
+- **Day 17: [Chronospatial Computer][gh]**
 
 [g1]: advent-of-code-2024/src/day_01.rs
 [g2]: advent-of-code-2024/src/day_02.rs
@@ -43,6 +44,7 @@
 [ge]: advent-of-code-2024/src/day_14.rs
 [gf]: advent-of-code-2024/src/day_15.rs
 [gg]: advent-of-code-2024/src/day_16.rs
+[gh]: advent-of-code-2024/src/day_17.rs
 
 # Advent of Code 2023 :christmas_tree: - C# :star: 45/50 :star:
 
