@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 use crate::utilities::get_input_lines;
 
 // https://adventofcode.com/2024/day/19
@@ -7,22 +9,18 @@ const USE_TEST_DATA : bool = false;
 
 fn try_match_pattern(pattern : String, towels : Vec<&str>) -> bool {
 
-    // println!("Pattern: {}", pattern);
     let mut possible : bool = false;
 
     if pattern.len() == 0 {
-        // println!("Pattern: {} is possible!", pattern);
         return true;
     }
 
     for t in &towels {
-        // println!("Checking towel: {}", t);
         if possible {
             break;
         }
 
         if pattern.starts_with(*t) {
-            // println!("Pattern '{}' starts with '{}'", pattern, t);
             possible |= try_match_pattern(pattern[t.len()..].to_string(), towels.clone());
         }
     }
@@ -30,21 +28,40 @@ fn try_match_pattern(pattern : String, towels : Vec<&str>) -> bool {
     return possible;
 }
 
+fn count_match_pattern(memory : &mut HashMap<String, usize>, pattern : String, towels : Vec<&str>) -> usize {
+
+    if memory.contains_key(&pattern) {
+        return memory[&pattern];
+    }
+
+    if pattern.len() == 0 {
+        return 1;
+    }
+
+    let mut count: usize = 0;
+
+    for t in &towels {
+
+        if pattern.starts_with(*t) {
+            count += count_match_pattern(memory, pattern[t.len()..].to_string(), towels.clone());
+        }
+    }
+
+    memory.insert(pattern.clone(), count);
+
+    return count;
+}
+
 #[allow(dead_code)]
 pub fn part_1() -> String
 {
     let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
-
     let towels : Vec<&str> = input[0].split_terminator(',').map(|l| l.trim()).collect();
-
     let mut patterns : Vec<String> = vec![];
 
     for i in 2..input.len() {
         patterns.push(input[i].clone());
     }
-
-    println!("Towels: {:?}", towels);
-    println!("Patterns: {:?}", patterns);
 
     let mut possible_patterns = 0;
 
@@ -62,23 +79,20 @@ pub fn part_1() -> String
 pub fn part_2() -> String
 {
     let input = get_input_lines(DAY_STRING, USE_TEST_DATA);
+    let towels : Vec<&str> = input[0].split_terminator(',').map(|l| l.trim()).collect();
+    let mut patterns : Vec<String> = vec![];
 
-    //let towels : Vec<&str> = input[0].split_terminator(',').map(|l| l.trim()).collect();
+    for i in 2..input.len() {
+        patterns.push(input[i].clone());
+    }
 
-    //let mut patterns : Vec<String> = vec![];
+    let mut possible_patterns = 0;
+    let mut memory : HashMap<String, usize> = HashMap::new();
 
-    // for i in 2..input.len() {
-    //     patterns.push(input[i].clone());
-    // }
+    for pat in &patterns {
+        count_match_pattern(&mut memory, pat.clone(), towels.clone());
+        possible_patterns += memory[pat];
+    }
 
-    // println!("Towels: {:?}", towels);
-    // println!("Patterns: {:?}", patterns);
-
-    // let mut possible_patterns = 0;
-
-    // for pat in &patterns {
-    //     possible_patterns += count_match_pattern(pat.clone(), towels.clone());
-    // }
-
-    return input.len().to_string();
+    return possible_patterns.to_string();
 }
