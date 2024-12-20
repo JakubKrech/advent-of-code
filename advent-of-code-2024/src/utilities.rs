@@ -50,3 +50,13 @@ pub fn print_grid(grid : &mut[&mut[char]], y_size : usize, x_size : usize) {
         println!("");
     }
 }
+
+#[allow(dead_code)]
+pub fn print_grid_u(grid : &mut[&mut[usize]], y_size : usize, x_size : usize) {
+    for y in 0..y_size {
+        for x in 0..x_size {
+            print!("{:3.0}", grid[y][x]);
+        }
+        println!("");
+    }
+}
