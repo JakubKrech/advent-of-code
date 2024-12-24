@@ -3,7 +3,7 @@
 // // https://adventofcode.com/2024/day/2
 
 // const DAY_STRING : &str = "day_02";
-// const USE_TEST_DATA : bool = false;
+// const USE_TEST_DATA : bool = true;
 
 // #[allow(dead_code)]
 // pub fn part_1() -> String
