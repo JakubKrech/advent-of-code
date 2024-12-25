@@ -6,7 +6,7 @@
 | **2021** | Python      |[:star:][d1]|[:star:][d2]|[:star:][d3]|[:star:][d4]|[:star:][d5]|[:star:][d6]|[:star:][d7]|[:star:][d8]|[:star:][d9]|[:star:][da]|[:star:][db]|[:star:][dc]|[:star:][dd]|[:star:][de]|[:star:][df]|[:star:][dg]|[:star:][dh]|[:star:][di]|[:star:][dj]|[:star:][dk]|[:star:][dl]|[:star:][dm]|[:star:][dn]|[:star:][do]|[:star:][dp]|
 | **2022** | C#          |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |            |
 | **2023** | C#          |[:star:][f1]|[:star:][f2]|[:star:][f3]|[:star:][f4]|[:star:][f5]|[:star:][f6]|[:star:][f7]|[:star:][f8]|[:star:][f9]|[:star:][fa]|[:star:][fb]|[:star:][fc]|[:star:][fd]|[:star:][fe]|[:star:][ff]|[:star:][fg]|            |[:star:][fi]|[:star:][fj]|            |[:star:][fl]|[:star:][fm]|[:star:][fn]|            |            |
-| **2024** | Rust :crab: |[:star:][g1]|[:star:][g2]|[:star:][g3]|[:star:][g4]|[:star:][g5]|[:star:][g6]|[:star:][g7]|[:star:][g8]|[:star:][g9]|[:star:][ga]|[:star:][gb]|[:star:][gc]|[:star:][gd]|[:star:][ge]|[:star:][gf]|[:star:][gg]|[:star:][gh]|[:star:][gi]|[:star:][gj]|[:star:][gk]|[:star:][gl]|[:star:][gm]|[:star:][gn]|            |            |
+| **2024** | Rust :crab: |[:star:][g1]|[:star:][g2]|[:star:][g3]|[:star:][g4]|[:star:][g5]|[:star:][g6]|[:star:][g7]|[:star:][g8]|[:star:][g9]|[:star:][ga]|[:star:][gb]|[:star:][gc]|[:star:][gd]|[:star:][ge]|[:star:][gf]|[:star:][gg]|[:star:][gh]|[:star:][gi]|[:star:][gj]|[:star:][gk]|[:star:][gl]|[:star:][gm]|[:star:][gn]|[:star:][go]|            |
 
 # Advent of Code 2024 :christmas_tree: - Rust :crab:
 
@@ -33,6 +33,7 @@
 - **Day 21: [Keypad Conundrum][gl]**
 - **Day 22: [Monkey Market][gm]**
 - **Day 23: [LAN Party][gn]**
+- **Day 24: [Crossed Wires][go]**
 
 [g1]: advent-of-code-2024/src/day_01.rs
 [g2]: advent-of-code-2024/src/day_02.rs
@@ -57,6 +58,7 @@
 [gl]: advent-of-code-2024/src/day_21.rs
 [gm]: advent-of-code-2024/src/day_22.rs
 [gn]: advent-of-code-2024/src/day_23.rs
+[go]: advent-of-code-2024/src/day_24.rs
 
 # Advent of Code 2023 :christmas_tree: - C# :star: 45/50 :star:
 

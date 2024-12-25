@@ -6,7 +6,7 @@ mod day_06; mod day_07; mod day_08; mod day_09; mod day_10;
 mod day_11; mod day_12; mod day_13; mod day_14; mod day_15;
 mod day_16; mod day_17; mod day_18; mod day_19; mod day_20;
 // mod day_21;
-mod day_22; mod day_23;
+mod day_22; mod day_23; mod day_24;
 
 fn main() {
     // run_solution("01", &day_01::part_1, &day_01::part_2);
@@ -36,4 +36,5 @@ fn main() {
     // run_solution("21", &day_21::part_1, &day_21::part_2);
     // run_solution("22", &day_22::part_1, &day_22::part_2);
     // run_solution("23", &day_23::part_1, &day_23::part_2);
+    run_solution("24", &day_24::part_1, &day_24::part_2);
 }
