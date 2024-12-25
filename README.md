@@ -34,7 +34,7 @@
 - **Day 22: [Monkey Market][gm]**
 - **Day 23: [LAN Party][gn]**
 - **Day 24: [Crossed Wires][go]**
-- **Day 25: [Code Chronicle][go]**
+- **Day 25: [Code Chronicle][gp]**
 
 [g1]: advent-of-code-2024/src/day_01.rs
 [g2]: advent-of-code-2024/src/day_02.rs
