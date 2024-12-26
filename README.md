@@ -25,7 +25,7 @@
 - **Day 13: [Claw Contraption][gd]**
 - **Day 14: [Restroom Redoubt][ge]**
 - **Day 15: [Warehouse Woes][gf]**
-- **Day 16: Reindeer Maze**
+- **Day 16: [Reindeer Maze][gg]**
 - **Day 17: [Chronospatial Computer][gh]**
 - **Day 18: [RAM Run][gi]**
 - **Day 19: [Linen Layout][gj]**

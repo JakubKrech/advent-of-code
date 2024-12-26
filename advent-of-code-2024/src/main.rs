@@ -27,15 +27,15 @@ fn main() {
     // run_solution("14", &day_14::part_1, &day_14::part_2);
     // run_solution("15", &day_15::part_1, &day_15::part_2);
     
-    // run_solution("16", &day_16::part_1, &day_16::part_2);
-    // run_solution("17", &day_17::part_1, &day_17::part_2);
-    // run_solution("18", &day_18::part_1, &day_18::part_2);
-    // run_solution("19", &day_19::part_1, &day_19::part_2);    
-    // run_solution("20", &day_20::part_1, &day_20::part_2);
+    run_solution("16", &day_16::part_1, &day_16::part_2);
+    run_solution("17", &day_17::part_1, &day_17::part_2);
+    run_solution("18", &day_18::part_1, &day_18::part_2);
+    run_solution("19", &day_19::part_1, &day_19::part_2);    
+    run_solution("20", &day_20::part_1, &day_20::part_2);
 
     // run_solution("21", &day_21::part_1, &day_21::part_2);
-    // run_solution("22", &day_22::part_1, &day_22::part_2);
-    // run_solution("23", &day_23::part_1, &day_23::part_2);
-    // run_solution("24", &day_24::part_1, &day_24::part_2);
+    run_solution("22", &day_22::part_1, &day_22::part_2);
+    run_solution("23", &day_23::part_1, &day_23::part_2);
+    run_solution("24", &day_24::part_1, &day_24::part_2);
     run_solution("25", &day_25::part_1, &day_25::part_2);
 }
