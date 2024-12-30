@@ -12,6 +12,7 @@ pub fn part_1() -> String {
     return lowest_sum_of_complexities.to_string();
 }
 
+#[allow(dead_code)]
 pub fn part_2() -> String {
     let lowest_sum_of_complexities : u64 = find_lowest_sum_of_complexities(&get_input_lines(DAY_STRING, USE_TEST_DATA), 25);
     return lowest_sum_of_complexities.to_string();

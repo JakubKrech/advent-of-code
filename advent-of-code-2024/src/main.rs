@@ -35,13 +35,6 @@ fn main() {
     run_solution("21", &day_21::part_1, &day_21::part_2);
     run_solution("22", &day_22::part_1, &day_22::part_2);
     run_solution("23", &day_23::part_1, &day_23::part_2);
-
-    // day 24 idea:
-    // calculate how many bits match -> try find swap of 2 outputs that will make one more bit match
-    // then find another swap of 2 that will fix another bit
-    // repeat two more times -> 4 pairs of outputs will be found, maybe it will work
     run_solution("24", &day_24::part_1, &day_24::part_2); 
-    
-    
     run_solution("25", &day_25::part_1, &day_25::part_2);
 }
