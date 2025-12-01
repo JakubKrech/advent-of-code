@@ -1,13 +1,20 @@
-### Here are my C# solutions for AoC [2018](https://adventofcode.com/2018/), [2021](https://adventofcode.com/2021/), [2022](https://adventofcode.com/2022/), [2023](https://adventofcode.com/2023/) & [2024](https://adventofcode.com/2024/) - programming puzzles created by [Eric Wastl](http://was.tl/).
+### Here are my C# solutions for AoC [2018](https://adventofcode.com/2018/), [2021](https://adventofcode.com/2021/), [2022](https://adventofcode.com/2022/), [2023](https://adventofcode.com/2023/), [2024](https://adventofcode.com/2024/) & [2025](https://adventofcode.com/2025/) - programming puzzles created by [Eric Wastl](http://was.tl/).
 
 | Year     | Language              | Stars                 |
 |:--------:|:---------------------:|:---------------------:|
+| **2025** | Python :snake:        |  2/24          |
 | **2024** | Rust :crab:           | 50/50 :star:          |
 | **2023** | C#                    | 45/50                 |
 | **2022** | C#                    | 32/50                 |
 | **2021** | Python :snake:        | 50/50 :star:          |
 | **2020** | Python :snake:        | 36/50                 |
 | **2018** | C++                   | 42/50                 |
+
+# Advent of Code 2025 :christmas_tree: - Python :snake:
+
+- **Day 1: [Secret Entrance][h1]**
+
+[h1]: advent-of-code-2025/day_01.py
 
 # Advent of Code 2024 :christmas_tree: - Rust :crab: :star: 50/50 :star:
 
