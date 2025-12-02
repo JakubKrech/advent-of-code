@@ -2,7 +2,7 @@
 
 | Year     | Language              | Stars                 |
 |:--------:|:---------------------:|:---------------------:|
-| **2025** | Python :snake:        |  2/24          |
+| **2025** | Python :snake:        |  4/24                 |
 | **2024** | Rust :crab:           | 50/50 :star:          |
 | **2023** | C#                    | 45/50                 |
 | **2022** | C#                    | 32/50                 |
@@ -13,8 +13,10 @@
 # Advent of Code 2025 :christmas_tree: - Python :snake:
 
 - **Day 1: [Secret Entrance][h1]**
+- **Day 2: [Gift Shop][h2]**
 
 [h1]: advent-of-code-2025/day_01.py
+[h2]: advent-of-code-2025/day_02.py
 
 # Advent of Code 2024 :christmas_tree: - Rust :crab: :star: 50/50 :star:
 
