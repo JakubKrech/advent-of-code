@@ -20,6 +20,7 @@
 - **Day 6: [Trash Compactor][h6]**
 - **Day 7: [Laboratories][h7]**
 - **Day 8: [Playground][h8]**
+- **Day 9: [Movie Theater][h9]**
 
 [h1]: advent-of-code-2025/day_01.py
 [h2]: advent-of-code-2025/day_02.py
@@ -29,6 +30,7 @@
 [h6]: advent-of-code-2025/day_06.py
 [h7]: advent-of-code-2025/day_07.py
 [h8]: advent-of-code-2025/day_08.py
+[h9]: advent-of-code-2025/day_09.py
 
 # Advent of Code 2024 :christmas_tree: - Rust :crab: :star: 50/50 :star:
 
