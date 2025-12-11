@@ -2,7 +2,7 @@
 
 | Year     | Language              | Stars                 |
 |:--------:|:---------------------:|:---------------------:|
-| **2025** | Python :snake:        | 16/24                 |
+| **2025** | Python :snake:        | 18/24                 |
 | **2024** | Rust :crab:           | 50/50 :star:          |
 | **2023** | C#                    | 45/50                 |
 | **2022** | C#                    | 32/50                 |
@@ -21,7 +21,7 @@
 - **Day 7: [Laboratories][h7]**
 - **Day 8: [Playground][h8]**
 - **Day 9: [Movie Theater][h9]**
-- **Day 10: [Movie Theater][ha]**
+- **Day 10: [Factory][ha]**
 
 [h1]: advent-of-code-2025/day_01.py
 [h2]: advent-of-code-2025/day_02.py
