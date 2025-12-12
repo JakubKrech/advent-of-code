@@ -2,7 +2,7 @@
 
 | Year     | Language              | Stars                 |
 |:--------:|:---------------------:|:---------------------:|
-| **2025** | Python :snake:        | 18/24                 |
+| **2025** | Python :snake:        | 19/24                 |
 | **2024** | Rust :crab:           | 50/50 :star:          |
 | **2023** | C#                    | 45/50                 |
 | **2022** | C#                    | 32/50                 |
@@ -22,6 +22,8 @@
 - **Day 8: [Playground][h8]**
 - **Day 9: [Movie Theater][h9]**
 - **Day 10: [Factory][ha]**
+- **Day 11: [Reactor][hb]**
+- **Day 12: [Christmas Tree Farm][hc]**
 
 [h1]: advent-of-code-2025/day_01.py
 [h2]: advent-of-code-2025/day_02.py
@@ -33,6 +35,8 @@
 [h8]: advent-of-code-2025/day_08.py
 [h9]: advent-of-code-2025/day_09.py
 [ha]: advent-of-code-2025/day_10.py
+[hb]: advent-of-code-2025/day_11.py
+[hc]: advent-of-code-2025/day_12.py
 
 # Advent of Code 2024 :christmas_tree: - Rust :crab: :star: 50/50 :star:
 
